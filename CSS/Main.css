@@ -1,0 +1,111 @@
+    body{
+      margin-top:20px;
+      background-color: rgb(200, 250, 250);
+    }
+    #search-input{
+      display: block;
+      border-radius: 20px;
+      padding: 10px;
+      margin: 0 auto;
+    }
+    .member-entry {
+      border: 1px solid #ebebeb;
+      padding: 15px;
+      margin-top: 15px;
+      margin-bottom: 30px;
+      transition: all 300ms ease-in-out;
+      border-radius: 3px;
+      background-clip: padding-box;
+      background:#fff;
+      box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2),0 6px 10px 0 rgba(0,0,0,0.3);
+    }
+    .member-entry:before,
+    .member-entry:after {
+      content: " ";
+      display: table;
+    }
+    .member-entry:after {
+      clear: both;
+    }
+    .member-entry:hover {
+      background: rgba(230, 230, 230, 1);
+      box-shadow: 1px 1px 1px rgba(0, 1, 1, 0.4);
+    }
+    .member-entry .member-img,
+    .member-entry .member-details {
+      float: left;
+    }
+    .member-entry .member-img {
+      position: relative;
+      display: block;
+      width: 10%;
+    }
+    .member-entry .member-img img {
+      width: 100%;
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+    .member-entry .member-details {
+      width: 89.9%;
+    }
+    .member-entry .member-details h4 {
+      font-size: 18px;
+      margin-left: 20px;
+    }
+    .member-entry .member-details h4 a {
+      transition: all 500ms ease-in-out;
+      color: black
+    }
+    .member-entry .member-details h4 a:hover {
+      color:rgb(100, 100, 100);
+    }
+
+    @media screen and (max-width: 768px) {
+      .member-entry .member-img {
+        width: 18%;
+      }
+      .member-entry .member-details {
+        width: 81.9%;
+      }
+      .member-entry .member-details h4 {
+        margin-top: 0;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      .member-entry .member-img {
+        width: 100%;
+        float: none;
+        text-align: center;
+        position: relative;
+        background: #f8f8f8;
+        margin-bottom: 15px;
+        border-radius: 3px;
+        background-clip: padding-box;
+      }
+      .member-entry .member-img img {
+        width: auto;
+        display: inline-block;
+        border-radius: 0;
+        background-clip: padding-box;
+      }
+      .member-entry .member-details {
+        width: 100%;
+        float: none;
+      }
+      .member-entry .member-details h4{
+        margin-left: 0;
+      }
+      .member-entry .member-details h4 > div{
+        padding: 0;
+      }
+    }
+    @media screen and (max-width:200px) {
+        .member-details a{
+          font-size: 14px;
+        }
+
+        #search-input{
+            width: 80%;
+        }
+    }

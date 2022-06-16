@@ -1,70 +1,193 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>TASK!</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet" href="../CSS/Main.css">
-</head>
-
-<body>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-<div class="container">
-<div class="row bootstrap snippets bootdeys"> 
-    <div class="col-md-9 col-sm-7"> 
-    </div> 
-    <div class="col-md-3 col-sm-5"> 
-        <form method="get" role="form" class="search-form-full"> 
-            <div class="form-group"> 
-                <input type="text" class="form-control" name="s" id="search-input" placeholder="Search..."> 
-                <i class="entypo-search"></i> 
-            </div> 
-        </form> 
-    </div> 
-</div>
-<div class="member-entry"> 
-    <a href="#" class="member-img"> 
-        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-rounded"> 
-    </a> 
-    <div class="member-details"> 
-        <h4> <a href="#">Johnnie Linton</a> </h4> 
-    </div> 
-</div>
-<div class="member-entry"> 
-    <a href="#" class="member-img"> 
-        <img src="https://bootdey.com/img/Content/avatar/avatar2.png" class="img-rounded"> 
-    </a> 
-    <div class="member-details"> 
-        <h4> <a href="#">Johnnie Linton</a> </h4> 
-    </div> 
-</div>
-<div class="member-entry"> 
-    <a href="#" class="member-img"> 
-        <img src="https://bootdey.com/img/Content/avatar/avatar3.png" class="img-rounded"> 
-    </a> 
-    <div class="member-details"> 
-        <h4> <a href="#">Johnnie Linton</a> </h4> 
-    </div>  
-</div>
-<div class="member-entry"> 
-    <a href="#" class="member-img"> 
-        <img src="https://bootdey.com/img/Content/avatar/avatar4.png" class="img-rounded"> 
-    </a> 
-    <div class="member-details"> 
-        <h4> <a href="#">Johnnie Linton</a> </h4> 
-    </div> 
-</div>
-<div class="member-entry"> 
-    <a href="#" class="member-img"> 
-        <img src="https://bootdey.com/img/Content/avatar/avatar5.png" class="img-rounded"> 
-    </a> 
-    <div class="member-details"> 
-        <h4> <a href="#">Johnnie Linton</a> </h4> 
-    </div> 
-</div>
-</div>
-</body>
-
-</html>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <!--  This file is inspired by bootdey.com @bootdey on twitter -->
+      <!--  All snippets are MIT license http://bootdey.com/license -->
+      <title>TASK!</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/9fb1c68d30.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="../CSS/Main.css" rel="stylesheet">
+    <script src = "../SCRIPT/Main.js"></script>
+  </head>
+  <body>
+          <div class="user-dashboard-info-box table-responsive mb-0 bg-white p-4 shadow-sm">
+            <table class="table manage-candidates-top mb-0">
+              <tbody>
+                <tr class="candidates-list">
+                  <td class="title">
+                    <div class="thumb">
+                      <img class="img-fluid" src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="">
+                    </div>
+                    <div class="candidate-list-details">
+                      <div class="candidate-list-info">
+                        <div class="candidate-list-title">
+                          <h5 class="mb-0"><a class="names" href="#">Brooke Kelly</a></h5>
+                        </div>
+                        <div class="candidate-list-option">
+                          <ul class="information">
+                            <li><i class="fas fa-filter pr-1"></i>Information Technology</li>
+                            <li><i class="fas fa-map-marker-alt pr-1"></i>Rolling Meadows, IL 60008</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="candidate-list-favourite-time text-center">
+                    <span class="candidate-list-time order-1">5/5</span>
+                    <a class="candidate-list-favourite order-2 text-danger" href="#"><i class="fas fa-heart"></i></a>
+                  </td>
+                  <td>
+                    <ul class="list-unstyled mb-0 d-flex justify-content-end">
+                      <button class="buttons">Quick <br> Hire</button>
+                      <a id="regular-1" onclick="myFunction()" class="text-primary" data-toggle="tooltip" title="" data-original-title="save"><i class="fa-regular fa-bookmark"></i></a>
+                      <a id="solid-1" onclick="myFunction()" class="text-primary" data-toggle="tooltip" title="" data-original-title="save" style="visibility: hidden;"><i class="fa-solid fa-bookmark"></i></a>
+                    </ul>
+                  </td>
+                </tr>
+                <tr class="candidates-list">
+                  <td class="title">
+                    <div class="thumb">
+                      <img class="img-fluid" src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+                    </div>
+                    <div class="candidate-list-details">
+                      <div class="candidate-list-info">
+                        <div class="candidate-list-title">
+                          <h5 class="mb-0"><a class="names" href="#">Ronald Bradley</a></h5>
+                        </div>
+                        <div class="candidate-list-option">
+                          <ul class="information">
+                            <li><i class="fas fa-filter pr-1"></i>Human Resources</li>
+                            <li><i class="fas fa-map-marker-alt pr-1"></i>Monroe Township, NJ 08831</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="candidate-list-favourite-time text-center">
+                    <span class="candidate-list-time order-1">3/5</span>
+                    <a class="candidate-list-favourite order-2 text-danger" href="#"><i class="fas fa-heart"></i></a>
+                  </td>
+                  <td>
+                    <ul class="list-unstyled mb-0 d-flex justify-content-end">
+                      <button class="buttons">Quick <br> Hire</button>
+                      <a id="regular-2" onclick="myFunction1()" class="text-primary" data-toggle="tooltip" title="" data-original-title="save"><i class="fa-regular fa-bookmark"></i></a>
+                      <a id="solid-2" onclick="myFunction1()" class="text-primary" data-toggle="tooltip" title="" data-original-title="save" style="visibility: hidden;"><i class="fa-solid fa-bookmark"></i></a>
+                    </ul>
+                  </td>
+                </tr>
+                <tr class="candidates-list">
+                  <td class="title">
+                    <div class="thumb">
+                      <img class="img-fluid" src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="">
+                    </div>
+                    <div class="candidate-list-details">
+                      <div class="candidate-list-info">
+                        <div class="candidate-list-title">
+                          <h5 class="mb-0"><a class="names" href="#">Rafael Briggs</a></h5>
+                        </div>
+                        <div class="candidate-list-option">
+                          <ul class="information">
+                            <li><i class="fas fa-filter pr-1"></i>Recruitment Consultancy</li>
+                            <li><i class="fas fa-map-marker-alt pr-1"></i>Haines City, FL 33844</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="candidate-list-favourite-time text-center">
+                    <span class="candidate-list-time order-1">3.5/5</span>
+                    <a class="candidate-list-favourite order-2 text-danger" href="#"><i class="fas fa-heart"></i></a>
+                  </td>
+                  <td>
+                    <ul class="list-unstyled mb-0 d-flex justify-content-end">
+                      <button class="buttons">Quick <br> Hire</button>
+                      <a id="regular-3" onclick="myFunction3()"  class="text-primary" data-toggle="tooltip" title="" data-original-title="save"><i class="fa-regular fa-bookmark"></i></a>
+                      <a id="solid-3" onclick="myFunction3()" class="text-primary" data-toggle="tooltip" title="" data-original-title="save" style="visibility: hidden;"><i class="fa-solid fa-bookmark"></i></a>
+                    </ul>
+                  </td>
+                </tr>
+                <tr class="candidates-list">
+                  <td class="title">
+                    <div class="thumb">
+                      <img class="img-fluid" src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="">
+                    </div>
+                    <div class="candidate-list-details">
+                      <div class="candidate-list-info">
+                        <div class="candidate-list-title">
+                          <h5 class="mb-0"><a class="names" href="#">Vickie Meyer</a></h5>
+                        </div>
+                        <div class="candidate-list-option">
+                          <ul class="information">
+                            <li><i class="fas fa-filter pr-1"></i>Human Resources</li>
+                            <li><i class="fas fa-map-marker-alt pr-1"></i>Minneapolis, MN 55406</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="candidate-list-favourite-time text-center">
+                    <span class="candidate-list-time order-1">1/5</span>
+                    <a class="candidate-list-favourite order-2 text-danger" href="#"><i class="fas fa-heart"></i></a>
+                  </td>
+                  <td>
+                    <ul class="list-unstyled mb-0 d-flex justify-content-end">
+                      <button class="buttons">Quick <br> Hire</button>
+                      <a id="regular-4" onclick="myFunction4()" class="text-primary" data-toggle="tooltip" title="" data-original-title="save"><i class="fa-regular fa-bookmark"></i></a>
+                      <a id="solid-4" onclick="myFunction4()" class="text-primary" data-toggle="tooltip" title="" data-original-title="save" style="visibility: hidden;"><i class="fa-solid fa-bookmark"></i></a>
+                    </ul>
+                  </td>
+                </tr>
+                <tr class="candidates-list">
+                  <td class="title">
+                    <div class="thumb">
+                      <img class="img-fluid" src="https://bootdey.com/img/Content/avatar/avatar4.png" alt="">
+                    </div>
+                    <div class="candidate-list-details">
+                      <div class="candidate-list-info">
+                        <div class="candidate-list-title">
+                          <h5 class="mb-0"><a class="names" href="#">Nichole Haynes</a></h5>
+                        </div>
+                        <div class="candidate-list-option">
+                          <ul class="information">
+                            <li><i class="fas fa-filter pr-1"></i>Information Technology</li>
+                            <li><i class="fas fa-map-marker-alt pr-1"></i>Botchergate, Carlisle</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="candidate-list-favourite-time text-center">
+                    <span class="candidate-list-time order-1">4.5/5</span>
+                    <a class="candidate-list-favourite order-2 text-danger" href="#"><i class="fas fa-heart"></i></a>
+                  </td>
+                  <td>
+                    <ul class="list-unstyled mb-0 d-flex justify-content-end">
+                      <button class="buttons">Quick <br> Hire</button>
+                      <a id="regular-5" onclick="myFunction2()" class="text-primary" data-toggle="tooltip" title="" data-original-title="save"><i class="fa-regular fa-bookmark"></i></a>
+                      <a id="solid-5" onclick="myFunction2()" class="text-primary" data-toggle="tooltip" title="" data-original-title="save" style="visibility: hidden;"><i class="fa-solid fa-bookmark"></i></a>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="text-center mt-3 mt-sm-3">
+              <ul class="pagination justify-content-center mb-0">
+                <button id="prev-button" class="page-item page-button prev" style="visibility: hidden;" onclick="prevButton(); prevFunction()">Prev</button>
+                <input type="radio" onclick="prevFunction()" name="pages" value = "1" id="page1" checked hidden>
+                <label class="page-item" for="page1">1</label>
+                <input type="radio" onclick="prevFunction()" name="pages" value = "2" id="page2" hidden>
+                <label class="page-item" for="page2">2</label>
+                <input type="radio" onclick="prevFunction()" name="pages" value = "3" id="page3" hidden>
+                <label class="page-item" for="page3">3</label>
+                <input type="radio" onclick="prevFunction()" name="pages" value = "4" id="page4" hidden>
+                <label class="page-item" for="page4">4</label>
+                <input type="radio" onclick="prevFunction()" name="pages" value = "5" id="page5" hidden>
+                <label class="page-item" for="page5">5</label>
+                <button onclick="nextButton(); prevFunction()" class="page-item page-button next">Next</button>              
+              </ul>
+            </div>
+          </div>
+  </body>
+  </html>

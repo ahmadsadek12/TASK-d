@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>TASK!</title>
+    <title>TASK! - Sign Up</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="../CSS/SignUp.css">
     <script src="../SCRIPT/SignUp.js"></script>
@@ -394,7 +394,6 @@
                     <option data-countryCode="IR" value="98">Iran (+98)</option>
                     <option data-countryCode="IQ" value="964">Iraq (+964)</option>
                     <option data-countryCode="IE" value="353">Ireland (+353)</option>
-                    <option data-countryCode="IL" value="972">Israel (+972)</option>
                     <option data-countryCode="IT" value="39">Italy (+39)</option>
                     <option data-countryCode="JM" value="1876">Jamaica (+1876)</option>
                     <option data-countryCode="JP" value="81">Japan (+81)</option>
@@ -450,6 +449,8 @@
                     <option data-countryCode="NO" value="47">Norway (+47)</option>
                     <option data-countryCode="OM" value="968">Oman (+968)</option>
                     <option data-countryCode="PW" value="680">Palau (+680)</option>
+                    <option data-countryCode="PN" value="970">Palestine (+970)</option>
+                    <option data-countryCode="PK" value="92">Pakistan (+92)</option>
                     <option data-countryCode="PA" value="507">Panama (+507)</option>
                     <option data-countryCode="PG" value="675">Papua New Guinea (+675)</option>
                     <option data-countryCode="PY" value="595">Paraguay (+595)</option>
@@ -522,6 +523,92 @@
             <button type="submit" name="signup" class="buttons" id="signup-button">Submit</button>
         </div>
     </form>
+    <script>
+         //this section of the code was inspired by Luke F. Courtney through https://codepen.io/LFCProductions/pen/eYvLOmx
+ const yearSelect = document.getElementById("year");
+ const monthSelect = document.getElementById("month");
+ const daySelect = document.getElementById("day");
+
+ const months = ['January', 'February', 'March', 'April', 
+ 'May', 'June', 'July', 'August', 'September', 'October',
+ 'November', 'December'];
+
+ (function populateMonths(){
+     for(let i = 0; i < months.length; i++){
+         const option = document.createElement('option');
+         option.textContent = months[i];
+         monthSelect.appendChild(option);
+     }
+     monthSelect.value = "January";
+ })();
+
+ let previousDay;
+
+ function populateDays(month){
+     const months = ['January', 'February', 'March', 'April', 
+     'May', 'June', 'July', 'August', 'September', 'October',
+     'November', 'December'];
+
+     let index = months.findIndex( months => months === month);
+
+     while(daySelect.firstChild){
+         daySelect.removeChild(daySelect.firstChild);
+     }
+     let dayNum;
+     let year = yearSelect.value;
+
+     if(index%2==0 || index == 7) {
+         dayNum = 31;
+     } else if(index%2==1 && index!=1 && index!=7) {
+         dayNum = 30;
+     }else{
+         if(new Date(year, 1, 29).getMonth() === 1){
+             dayNum = 29;
+         }else{
+             dayNum = 28;
+         }
+     }
+     for(let i = 1; i <= dayNum; i++){
+         const option = document.createElement("option");
+         option.textContent = i;
+         daySelect.appendChild(option);
+     }
+     if(previousDay){
+         daySelect.value = previousDay;
+         if(daySelect.value === ""){
+             daySelect.value = previousDay - 1;
+         }
+         if(daySelect.value === ""){
+             daySelect.value = previousDay - 2;
+         }
+         if(daySelect.value === ""){
+             daySelect.value = previousDay - 3;
+         }
+     }
+ }
+
+ function populateYears(){
+     let year = new Date().getFullYear();
+     for(let i = 17; i < 118; i++){
+         const option = document.createElement("option");
+         option.textContent = year - i;
+         yearSelect.appendChild(option);
+     }
+ }
+
+ populateDays(monthSelect.value);
+ populateYears();
+
+ yearSelect.onchange = function() {
+     populateDays(monthSelect.value);
+ }
+ monthSelect.onchange = function() {
+     populateDays(monthSelect.value);
+ }
+ daySelect.onchange = function() {
+     previousDay = daySelect.value;
+ }
+    </script>
 </body>
 
 </html>

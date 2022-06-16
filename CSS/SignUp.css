@@ -24,7 +24,7 @@ body{
 .buttons{
     display: block;
     margin: 0 auto ;
-    margin-top: 15%;
+    margin-top: 20%;
     cursor: pointer;
     border: solid 1.5px black;
     border-radius: 60px;
@@ -66,6 +66,7 @@ h3{
 
 #genderp{
     margin-bottom: 2px;
+    margin: 0 auto;
 }
 
 #gender{
@@ -85,26 +86,50 @@ h3{
 }
 
 #mobilenumber{
-width: 70%;
-display: block;
-float: right;
+    width: 70%;
+    display: block;
+    float: right;
+}
+
+#day{
+    width: 30%;
+    float: left;
+}
+#month{
+    width: 30%;
+    margin-left: 6%;
+    float: left;
+}
+
+#year{
+    width: 30%;
+    float: right;
+}
+
+.dob{
+    display: inline-block;
+}
+#gender{
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 10px;
 }
 
 @media screen and (min-width: 350px) {
     #form{
-     background-color: white;
-     width: 250px;
-     padding: 15px;
-     padding-left: 50px;
-     padding-right: 50px;
-     text-align: center;
-     border: 1px solid black;
-     border-radius: 10px;
-     margin: auto;
-     margin-top: 0%;
-     margin-bottom: 20px;
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-     font-size: 18px;
+        background-color: white;
+        width: 250px;
+        padding: 15px;
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin: auto;
+        margin-top: 0%;
+        margin-bottom: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 18px;
     }
     
     h3{
@@ -151,7 +176,7 @@ float: right;
     }
     
     .buttons{
-        font-size: 25px;
+        font-size: 20px;
     }
     
     #username{
@@ -163,25 +188,21 @@ float: right;
         font-size: 18px;
     }
 
-    #gender{
-        margin-bottom: 5px;
-    }
-
     #countrycode{
         width: 20%;
         float: left;
     }
     
     #mobilenumber{
-    width: 75%;
-    float: right;
+        width: 75%;
+        float: right;
     }
 }
 @media screen and (min-width: 450px) {
-#form{
-    width: 350px;
-}
-h3{
-    margin-top: -30px;
-}
+    #form{
+        width: 350px;
+    }
+    h3{
+        margin-top: -30px;
+    }
 }

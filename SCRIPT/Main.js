@@ -85,3 +85,22 @@ function prevButton() {
         x.style.visibility = 'visible';
       }
   }
+
+  function showPopUp(){
+     var popup = document.getElementById("popup");
+     var n1 = document.getElementById("name1");
+     var n2 = document.getElementById("name2");
+     var n3 = document.getElementById("name3");
+     var n4 = document.getElementById("name4");
+     var n5 = document.getElementById("name5");
+     var table = document.getElementById("table");
+
+     if(name1.checked || name2.checked || name3.checked || name4.checked || name5.checked){
+      popup.style.display = "block";
+      table.style.filter = "blur(5px)"
+     }
+     else{
+      popup.style.display = "none";
+      table.style.filter = "blur(0px)"
+     }
+  }

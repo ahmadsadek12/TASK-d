@@ -7,29 +7,38 @@
     <title>TASK! - Sign Up</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="../CSS/SignUp.css">
-    <script src="../SCRIPT/SignUp.js"></script>
+    <script src="../SCRIPT/MyProfile.js"></script>
 </head>
 
 <body>
     <form>
-        <h3>Task!</h3>
+        <h3>My Profile</h3>
         <div id="form">
-            <input type="text" class="inputs fullname" id="firstname" placeholder="First name">
-            <input type="text" class="inputs fullname" id="lastname" placeholder="Last name">
-            <input type="text" class="inputs" placeholder="Username">
-            <input type="email" class="inputs" placeholder="Email">
-            <input type="password" class="inputs" id="password" placeholder="Password">
+            <div class="thumb">
+                <input type="file" id="img-input" hidden>
+                <label for="img-input">
+                    <img class="img-fluid" src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="">
+                </label>
+            </div>
+            <input type="text" class="inputs fullname" id="firstname" placeholder="Ahmad">
+            <input type="text" class="inputs fullname" id="lastname" placeholder="Sadek">
+            <input type="text" class="inputs" placeholder="ahmadsadek12">
+            <input type="email" class="inputs" placeholder="ahmadsadek8@hotmail.com">
+            <input type="password" class="inputs" id="password" placeholder="Change password">
             <input type="password" class="inputs" id="confirm_password" placeholder="Confirm password">
             <fieldset id="worker-customer" class="fieldsets">
-                <input type="radio" name="group1" id="worker-radio" class="radios">
+                <input type="radio" onclick="ExperienceButton()" name="group1" id="worker-radio" class="radios" >
                 <label for="worker-radio" id="worker-label" class="radios">Worker</label>
-                <input type="radio" name="group1" id="customer-radio" class="radios">
+                <input type="radio" onclick="ExperienceButton()" name="group1" id="customer-radio" class="radios" checked>
                 <label for="customer-radio" id="custmer-label" class="radios">Customer</label>
             </fieldset>
+            <a type="button" href="Experience.html" name="experience-button" class="experience-button buttons" id="experience-button">Change Experience</a>
             <form class="dob" >
                 <p id="dobp">Date of Birth:</p>
                 <span>
-                    <select class="inputs" name="day" id="day"></select>
+                    <select class="inputs" name="day" id="day" >
+                        <option value="11" selected>11</option>
+                    </select>
                 </span>
                 <span>
                     <select class="inputs" name="month" id="month"></select>
@@ -41,7 +50,7 @@
             <div id="gender">
             <p id="genderp">Gender:</p>
             <fieldset class="fieldsets">
-                <input type="radio" name="group2" id="male-radio" onclick="myFunction()" class="genders">
+                <input type="radio" name="group2" id="male-radio" onclick="myFunction()" class="genders" checked>
                 <label for="male-radio" id="male-label" class="genders">Male</label>
                 <input type="radio" name="group2" id="female-radio" onclick="myFunction()" class="genders">
                 <label for="female-radio" id="female-label" class="genders">Female</label>
@@ -171,7 +180,7 @@
                 <option value="Kyrgyzstan">Kyrgyzstan</option>
                 <option value="Laos">Laos</option>
                 <option value="Latvia">Latvia</option>
-                <option value="Lebanon">Lebanon</option>
+                <option value="Lebanon" selected>Lebanon</option>
                 <option value="Lesotho">Lesotho</option>
                 <option value="Liberia">Liberia</option>
                 <option value="Libya">Libya</option>
@@ -519,9 +528,9 @@
                     <option data-countryCode="ZW" value="263">Zimbabwe (+263)</option>
                 </optgroup>
             </select>
-            <input type="text" class="inputs" id="mobilenumber" placeholder="Mobile number">
+            <input type="text" class="inputs" id="mobilenumber" placeholder="76 891 114">
         </div>
-            <button type="submit" name="signup" class="buttons" id="signup-button">Submit</button>
+            <button type="submit" name="signup" class="buttons" id="signup-button">Update Profile</button>
         </div>
     </form>
     <script>
@@ -540,7 +549,7 @@
          option.textContent = months[i];
          monthSelect.appendChild(option);
      }
-     monthSelect.value = "January";
+     monthSelect.value = "July";
  })();
 
  let previousDay;
@@ -586,6 +595,7 @@
              daySelect.value = previousDay - 3;
          }
      }
+     daySelect.value = 11;
  }
 
  function populateYears(){
@@ -595,6 +605,7 @@
          option.textContent = year - i;
          yearSelect.appendChild(option);
      }
+     yearSelect.value = 2001;
  }
 
  populateDays(monthSelect.value);

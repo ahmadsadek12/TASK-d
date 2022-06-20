@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>TASK! - Reviews</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="../CSS/Reviews.css">
+    <script src="https://kit.fontawesome.com/9fb1c68d30.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../SCRIPT/Main.js"></script>
+</head>
+
+<body>
+    <h3>Booke Kelly</h3>
+    <h4>Read what people say about Brooke Kelly's work</h4>
+    <div class="grid-container">
+        <div id="review1" class="reviews white-reviews">
+            <img class="img-fluid" id="first-img" src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="">
+            <h5>Name LastName</h5>
+            <div class="rating">
+                <i class="fas fa-heart" id="heart1"></i> <i class="fas fa-heart" id="heart2"></i> <i class="fas fa-heart" id="heart3"></i> <i class="fas fa-heart" id="heart4"></i> <i class="fas fa-heart" id="heart5"></i>
+            </div>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+        <div id="review2" class="reviews blue-reviews">
+            <img class="img-fluid" id="first-img" src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="">
+            <h5>Name LastName</h5>
+            <div class="rating">
+                <i class="fas fa-heart" id="heart1"></i> <i class="fas fa-heart" id="heart2"></i> <i class="fas fa-heart" id="heart3"></i> <i class="fas fa-heart" id="heart4"></i> <i class="fas fa-heart" id="heart5"></i>
+            </div>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+        <div id="review3" class="reviews white-reviews">
+            <img class="img-fluid" id="first-img" src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="">
+            <h5>Name LastName</h5>
+            <div class="rating">
+                <i class="fas fa-heart" id="heart1"></i> <i class="fas fa-heart" id="heart2"></i> <i class="fas fa-heart" id="heart3"></i> <i class="fas fa-heart" id="heart4"></i> <i class="fas fa-heart" id="heart5"></i>
+            </div>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+        <div id="review4" class="reviews blue-reviews">
+            <img class="img-fluid" id="first-img" src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="">
+            <h5>Name LastName</h5>
+            <div class="rating">
+                <i class="fas fa-heart" id="heart1"></i> <i class="fas fa-heart" id="heart2"></i> <i class="fas fa-heart" id="heart3"></i> <i class="fas fa-heart" id="heart4"></i> <i class="fas fa-heart" id="heart5"></i>
+            </div>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+        <div id="review5" class="reviews white-reviews">
+            <img class="img-fluid" id="first-img" src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="">
+            <h5>Name LastName</h5>
+            <div class="rating">
+                <i class="fas fa-heart" id="heart1"></i> <i class="fas fa-heart" id="heart2"></i> <i class="fas fa-heart" id="heart3"></i> <i class="fas fa-heart" id="heart4"></i> <i class="fas fa-heart" id="heart5"></i>
+            </div>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+        <div id="review6" class="reviews blue-reviews">
+            <img class="img-fluid" id="first-img" src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="">
+            <h5>Name LastName</h5>
+            <div class="rating">
+                <i class="fas fa-heart" id="heart1"></i> <i class="fas fa-heart" id="heart2"></i> <i class="fas fa-heart" id="heart3"></i> <i class="fas fa-heart" id="heart4"></i> <i class="fas fa-heart" id="heart5"></i>
+            </div>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </div>
+    <div class="text-center mt-3 mt-sm-3">
+        <ul class="pagination justify-content-center mb-0">
+          <button id="prev-button" class="page-item page-button prev" style="visibility: hidden;" onclick="prevButton(); prevFunction()">Prev</button>
+          <input type="radio" onclick="prevFunction()" name="pages" value = "1" id="page1" checked hidden>
+          <label class="page-item" for="page1">1</label>
+          <input type="radio" onclick="prevFunction()" name="pages" value = "2" id="page2" hidden>
+          <label class="page-item" for="page2">2</label>
+          <input type="radio" onclick="prevFunction()" name="pages" value = "3" id="page3" hidden>
+          <label class="page-item" for="page3">3</label>
+          <input type="radio" onclick="prevFunction()" name="pages" value = "4" id="page4" hidden>
+          <label class="page-item" for="page4">4</label>
+          <input type="radio" onclick="prevFunction()" name="pages" value = "5" id="page5" hidden>
+          <label class="page-item" for="page5">5</label>
+          <button onclick="nextButton(); prevFunction()" class="page-item page-button next">Next</button>              
+        </ul>
+      </div>
+</body>
+</html>
